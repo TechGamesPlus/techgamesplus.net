@@ -1,0 +1,60 @@
+---
+const year = new Date().getFullYear()
+---
+
+<footer>
+    <div class="footer-content">
+        <p>
+            Powered by <a href="https://astro.build" target="_blank">Astro</a>.
+            Source <a href="https://git.equinoxx.dev/equinoxx/equinoxx.dev" target="_blank">available here</a>.
+        </p>
+        <p>
+            &copy; <a href="https://techgamesplus.net">TechGamesPlus</a> {year}.
+        </p>
+    </div>
+</footer>
+
+<style>
+    footer {
+        display: flex;
+        padding: 8px 0;
+        background-color: #111827;
+        color: white;
+    }
+    .footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        max-width: 1290px;
+        
+        p {
+            font-size: 14px;
+            padding: 8px;
+            margin: 0;
+            font-weight: 400;
+        }
+        a {
+            text-decoration: underline;
+            color: white;
+        }
+        
+        :last-child {
+            flex-grow: 1;
+            text-align: right;
+        }
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .footer-content {
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            text-align: center;
+            padding: 0;
+        }
+    }
+</style>

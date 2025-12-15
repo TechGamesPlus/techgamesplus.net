@@ -1,16 +1,40 @@
 ---
-
+import Base from "../layouts/Base.astro";
+import Kickoff from "../components/Kickoff.astro";
+import TextImageSection from "../components/TextImageSection.astro";
+import LinkButton from "../components/LinkButton.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base title="Home" description="Welcome to my personal website!">
+	<Kickoff contentAlign="left" backgroundImage="/kickoff.jpg">
+		<h1>Hi!</h1>
+		<h2>It's me: TGP!</h2>
+		<p>
+			Who am I? What do I do?<br/>
+			Nobody knows, but apparently I have a website :D
+		</p>
+		<img src="/favicon.png" alt="TGP Logo" width="400"/>
+	</Kickoff>
+	<TextImageSection
+		imageSide="right"
+		imageSrc="https://www.techgamesplus.com/web/image/928-2e544f83/04_OfficeScreen.webp"
+		imageAlt="A hand drawn desk with a computer screen."
+	>
+		<h2>The Awakening: 5th Anniversary</h2>
+		<p>
+			My upcoming Visual Novel game to celebrate the fifth anniversary of The Awakening (2020)
+		</p>
+		<LinkButton href="/projects/the-awakening-5th-anniversary">View Here</LinkButton>
+	</TextImageSection>
+	<TextImageSection
+		imageSide="left"
+		imageSrc="https://www.techgamesplus.com/web/image/927-ca7ca3fc/Screenshot%202025-09-14%20161502.webp"
+		imageAlt="A hand drawn desk with a computer screen."
+	>
+		<h2>AirCS Race 2025</h2>
+		<p>
+			My POV Timelapse on the AirCS Race 2025 is available for viewing
+		</p>
+		<LinkButton href="https://youtu.be/PUR4POmtYmg" target="_blank">View Here</LinkButton>
+	</TextImageSection>
+</Base>

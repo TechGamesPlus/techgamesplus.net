@@ -1,0 +1,42 @@
+---
+interface Props {
+    contentAlign: "left" | "center" | "right";
+}
+const { contentAlign } = Astro.props;
+
+let alignItems = "center";
+let textAlign = "center";
+switch(contentAlign) {
+    case "left":
+        textAlign = "left";
+        alignItems = "flex-start";
+        break;
+    case "center":
+        break;
+    case "right":
+        textAlign = "right";
+        alignItems = "flex-end";
+        break;
+}
+---
+
+<section>
+    <div class="section-content" style={`align-items: ${alignItems}; text-align: ${textAlign};`}>
+        <slot />
+    </div>
+</section>
+
+<style>
+    section {
+        padding: 60px 0 0 0;
+        background-color: var(--section-background-color);
+    }
+    .section-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        width: 100%;
+        margin: auto;
+        max-width: 1290px;
+    }
+</style>

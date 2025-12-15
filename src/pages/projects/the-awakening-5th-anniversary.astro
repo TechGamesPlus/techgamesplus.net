@@ -1,0 +1,95 @@
+---
+import Base from "../../layouts/Base.astro";
+import Kickoff from "../../components/Kickoff.astro";
+import Section from "../../components/Section.astro";
+---
+
+<Base title="The Awakening 5th Anniversary" description="A game by TechGamesPlus">
+    <Kickoff contentAlign="center" backgroundImage="/03_OfficeTutorialScreen.webp">
+        <h1>The Awakening</h1>
+        <h2>5th Anniversary</h2>
+        <p>A game by TechGamesPlus</p>
+    </Kickoff>
+    <Section contentAlign="center">
+        <div class="video-container">
+            <iframe src="https://www.youtube-nocookie.com/embed/RRIFC2AgTMA?si=koWkVTFnH0R1sJi7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </Section>
+    <Section contentAlign="left">
+        <p>
+            <b>The Awakening: 5th Anniversary</b> celebrates the 5th anniversary of the release of The Awakening for Microsoft PowerPoint (TechGamesPlus, 2020). For this occasion, the game has been remade in Ren'Py, featuring most of the original content, with a few new additions and an answer to an unsolved crime.
+            James Apline, a new employee of Script Entertainment, is suddenly involved in a murder case following the death of one of his closest friends and various suspicious activity.
+        </p>
+    </Section>
+    <Section contentAlign="left">
+        <h2>Questions and Answers</h2>
+        <h3>What is the age rating of the game?</h3>
+        <p>
+            <b>The Awakening: 5th Anniversary</b> does not have an official classification rating, however, the author (myself) self-classifies this as PG-13.
+            This game is not suitable for children under 13 nor those who are easily disturbed. For more information, visit the content warnings page on this website
+            You have been warned. I am not to be held liable if you ignore these warnings.
+        </p>
+        <h3>How do I play this game?</h3>
+        <p>
+            This game is made in the Ren'Py engine, meaning that you must have a computer to play this. Due to certain reasons/restrictions, this game will not be available on iOS and Android.
+            <br/>
+            To play the game, you must extract the ZIP files available to you.
+        </p>
+        <ul>
+            <li>Windows: Launch the game with the Executable (exe) file</li>
+            <li>Mac: Launch the Application (app) file. You may have to enable the application in your security settings</li>
+            <li>Linux: Ensure that the Bash Script (SH) file is able to run as an executable, then run the script as such</li>
+        </ul>
+        <h3>What do I do if there is a bug?</h3>
+        <p>
+            All games will have bugs. Whilst I have play-tested this game across plenty of dedicated hours, you may still come across some bugs that I have not discovered.
+            <br/>
+            Please visit my contact page (at the top of this website) and send me an email. Please ensure that I know that the email is about this game and describe how to potentially replicate this bug.
+            <br/>
+            In regards to Nights 2 & 4: A random choice variable is in use, so I may not be able to replicate your bug (however unlike you I have a debug console so I can set the variables at my command and will endeavour to replicate it)
+        </p>
+        <h3>Why does the game look like a child made it?</h3>
+        <p>
+            That is because a child did make this... well, not this version of the game. The Awakening (2020) was a game that I made in Microsoft PowerPoint when I was 12-13, meaning that it made zero sense and that it looks graphically shit.
+            <br/>
+            Of course, I had planned to recreate the story in a way that does make sense, but of course I haven't gotten to the stage of dedicating myself entirely; plus, I'm only one person, and my drawing skills are absolutely crap, although they have improved since 2020.
+            <br/>
+            So before you start asking "why does this look so shit?", keep in mind that this is a remaster of the game, and that most assets were simply reused. That being said, don't get your expectations high about the quality of this game.
+        </p>
+        <h3>Why have I never heard of this before and why does this exist?</h3>
+        <p>
+            Because you haven't and because it can.
+            <br/>
+            Let me explain a little about the cringe backstory behind this... As a 12-year-old, I made this game as a fan-project for a channel I recently got obsessed about, OSFirstTimer. There wasn't a real special connection about it - All they did was review operating systems. Around that same time, I saw Lixian's videos on making a game for Markiplier (you probably know who those guys are) and got inspired to make one myself. Of course, as a 12-year-old, I had no clue how to make a game in a game engine before and never expected the copious amount of effort needed to make one.
+            <br/>
+            Hence, because I had experience tinkering around in Microsoft PowerPoint a lot, I thought that I would make a game in PowerPoint. That game would surface onto YouTube a year later with the release of OSFT's PowerPoint 2021 video where a download link was available. Since the beginning of this year, the game has been delisted.
+            <br/>
+            So unless you watched the video and it piqued your interests, or you were one of my close friends at the time, you wouldn't know about the game and that's fair enough.
+        </p>
+        <h3>Will you accept donations for the game?</h3>
+        <p>
+            No.
+            <br/>
+            If I decided to earn money off of this game, I would have to pay royalties to certain people like Jaximic, who made (almost) all of the music for this game. Other songs were downloaded from the YouTube Audio Library, and almost all the sound effects were downloaded elsewhere.
+            <br/>
+            Despite these songs practically being royalty-free, I find it morally wrong to earn money off of someone else's creation.
+        </p>
+    </Section>
+</Base>
+
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+</style>

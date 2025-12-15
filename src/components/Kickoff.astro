@@ -1,0 +1,79 @@
+---
+interface Props {
+    backgroundImage: string;
+    contentAlign: "left" | "center" | "right";
+}
+const { backgroundImage, contentAlign } = Astro.props as Props;
+
+let alignItems = "center";
+let textAlign = "center";
+switch(contentAlign) {
+    case "left":
+        textAlign = "left";
+        alignItems = "flex-start";
+        break;
+    case "center":
+        // Default alignment for center
+        break;
+    case "right":
+        textAlign = "right";
+        alignItems = "flex-end";
+        break;
+}
+---
+
+<section style={`background-image: url(${backgroundImage})`}>
+    <div class="kickoff-content" style={`align-items: ${alignItems}; text-align: ${textAlign};`}>
+        <slot />
+    </div>
+    <div class="background-filter" />
+</section>
+
+<style>
+    section {
+        display: flex;
+        min-height: calc(100vh - 56px);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        background-color: #8CC4F7;
+    }
+    .background-filter {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        background-color: rgba(0, 0, 0, 50%);
+    }
+    .kickoff-content {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+        width: 100%;
+        margin: auto;
+        color: white;
+        text-align: left;
+        max-width: 1290px;
+        
+        img {
+            display: inline-block;
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .kickoff-scroll-btn { transition: none; }
+    }
+</style>

@@ -1,0 +1,40 @@
+---
+import "../styles/global.css";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+    title: string;
+    description: string;
+}
+
+let { title, description } = Astro.props;
+---
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{title} | TGP</title>
+    <meta name="description" content=`${description}` />
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+            data-rh="true"
+    />
+    <link rel="icon" href="/favicon.png" type="image/x-icon" />
+</head>
+<body>
+<Header />
+<main>
+    <slot />
+</main>
+<Footer />
+</body>
+</html>
+
+<style>
+    main {
+        padding-top: 56px;
+    }
+</style>
+

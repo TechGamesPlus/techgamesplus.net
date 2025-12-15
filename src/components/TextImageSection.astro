@@ -1,0 +1,79 @@
+---
+interface Props {
+    imageSrc: string;
+    imageAlt: string;
+    imageSide: "left" | "right";
+}
+const { imageSrc, imageAlt, imageSide } = Astro.props;
+---
+
+<section>
+    <div class=`section-content ${imageSide}`>
+        <div class="text-content">
+            <slot />
+        </div>
+        <div class="image-content">
+            <img src={imageSrc} alt={imageAlt}>
+        </div>
+    </div>
+</section>
+
+<style>
+    section {
+        padding-top: 60px;
+        background-color: var(--section-background-color);
+    }
+    .section-content {
+        max-width: 1290px;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 100%;
+        display: flex;
+        gap: 110px;
+        .text-content {
+            width: 50%;
+            margin: auto;
+        }
+
+        .image-content {
+            width: 50%;
+            max-width: 100%;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+        }
+    }
+    .section-content.left {
+        flex-direction: row-reverse;
+        .text-content {
+            text-align: right;
+            align-items: flex-end;
+        }
+    }
+    .section-content.right {
+        flex-direction: row;
+        .text-content {
+            text-align: left;
+            align-items: flex-start;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        .section-content {
+            flex-direction: column-reverse !important;
+            gap: 0;
+
+            .text-content {
+                width: 100%;
+                text-align: left !important;
+            }
+        }
+
+        .section-content .image-content {
+            width: 100%;
+        }
+    }
+</style>
