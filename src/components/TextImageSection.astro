@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets"
+import type { ImageMetadata } from "astro";
+
 interface Props {
-    imageSrc: string;
+    imageSrc: ImageMetadata;
     imageAlt: string;
     imageSide: "left" | "right";
 }
@@ -13,7 +16,7 @@ const { imageSrc, imageAlt, imageSide } = Astro.props;
             <slot />
         </div>
         <div class="image-content">
-            <img src={imageSrc} alt={imageAlt}>
+            <Image src={imageSrc} alt={imageAlt} />
         </div>
     </div>
 </section>

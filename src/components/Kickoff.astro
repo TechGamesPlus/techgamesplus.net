@@ -1,9 +1,12 @@
 ---
+import { Image } from "astro:assets"
+import type { ImageMetadata } from "astro";
 interface Props {
-    backgroundImage: string;
+    backgroundImage: ImageMetadata;
+    backgroundAlt: string;
     contentAlign: "left" | "center" | "right";
 }
-const { backgroundImage, contentAlign } = Astro.props as Props;
+const { backgroundImage, backgroundAlt, contentAlign } = Astro.props as Props;
 
 let alignItems = "center";
 let textAlign = "center";
@@ -22,10 +25,21 @@ switch(contentAlign) {
 }
 ---
 
-<section style={`background-image: url(${backgroundImage})`}>
+<section>
     <div class="kickoff-content" style={`align-items: ${alignItems}; text-align: ${textAlign};`}>
         <slot />
     </div>
+    <Image src={backgroundImage} alt={backgroundAlt} style={`
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        pointer-events: none;
+    `} />
     <div class="background-filter" />
 </section>
 
@@ -37,6 +51,7 @@ switch(contentAlign) {
         background-position: center;
         position: relative;
         background-color: #8CC4F7;
+        overflow: hidden;
     }
     .background-filter {
         top: 0;
