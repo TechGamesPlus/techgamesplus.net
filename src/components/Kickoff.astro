@@ -25,21 +25,10 @@ switch(contentAlign) {
 }
 ---
 
-<section>
+<section style={`background-image: url(${backgroundImage.src})`}>
     <div class="kickoff-content" style={`align-items: ${alignItems}; text-align: ${textAlign};`}>
         <slot />
     </div>
-    <Image src={backgroundImage} alt={backgroundAlt} style={`
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        position: absolute;
-        display: block;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        pointer-events: none;
-    `} />
     <div class="background-filter" />
 </section>
 
