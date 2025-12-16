@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import Base from "@layouts/Base.astro";
 import Kickoff from "@components/Kickoff.astro";
 import TextImageSection from "@components/TextImageSection.astro";
@@ -7,6 +8,7 @@ import LinkButton from "@components/LinkButton.astro";
 import kickoff_image from "@images/kickoff.jpg"
 import airCS_image from "@images/AirCS.png"
 import ta5a_image from "@images/TA5A_Home.png"
+import logoImage from "@images/logo.png"
 ---
 
 <Base title="Home" description="Welcome to my personal website!">
@@ -17,7 +19,7 @@ import ta5a_image from "@images/TA5A_Home.png"
 			Who am I? What do I do?<br/>
 			Nobody knows, but apparently I have a website :D
 		</p>
-		<img src="/favicon.png" alt="TGP Logo" width="400"/>
+		<Image src={logoImage} alt="TGP Logo" width="400" loading="eager"/>
 	</Kickoff>
 	<TextImageSection
 		imageSide="right"
@@ -33,7 +35,7 @@ import ta5a_image from "@images/TA5A_Home.png"
 	<TextImageSection
 		imageSide="left"
 		imageSrc={airCS_image}
-		imageAlt="A picture of a train station made in Minecraft."
+		imageAlt="Train station made in Minecraft."
 	>
 		<h2>AirCS Race 2025</h2>
 		<p>
