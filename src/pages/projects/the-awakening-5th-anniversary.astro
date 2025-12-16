@@ -1,9 +1,9 @@
 ---
-import Base from "../../layouts/Base.astro";
-import Kickoff from "../../components/Kickoff.astro";
-import Section from "../../components/Section.astro";
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import Section from "@components/Section.astro";
 
-import ta5a_image from "../../images/TA5A_Home.png"
+import ta5a_image from "@images/TA5A_Home.png"
 ---
 
 <Base title="The Awakening 5th Anniversary" description="A game by TechGamesPlus">
@@ -14,7 +14,14 @@ import ta5a_image from "../../images/TA5A_Home.png"
     </Kickoff>
     <Section contentAlign="center">
         <div class="video-container">
-            <iframe src="https://www.youtube-nocookie.com/embed/RRIFC2AgTMA?si=koWkVTFnH0R1sJi7" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe 
+                src="https://www.youtube-nocookie.com/embed/RRIFC2AgTMA?si=koWkVTFnH0R1sJi7"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                loading="lazy"
+            />
         </div>
     </Section>
     <Section contentAlign="left">
