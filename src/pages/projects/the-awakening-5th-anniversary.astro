@@ -4,6 +4,7 @@ import Kickoff from "@components/Kickoff.astro";
 import Section from "@components/Section.astro";
 
 import ta5a_image from "@images/TA5A_Home.png"
+import LinkButton from "@components/LinkButton.astro";
 ---
 
 <Base title="The Awakening 5th Anniversary" description="A game by TechGamesPlus">
@@ -11,7 +12,14 @@ import ta5a_image from "@images/TA5A_Home.png"
         <h1>The Awakening</h1>
         <h2>5th Anniversary</h2>
         <p>A game by TechGamesPlus</p>
+        <LinkButton href="https://techgamesplus.itch.io/the-awakening-5th-anniversary">Download Now</LinkButton>
     </Kickoff>
+    <Section contentAlign="left">
+        <p>
+            <b>The Awakening: 5th Anniversary</b> celebrates the 5th anniversary of the release of The Awakening for Microsoft PowerPoint (TechGamesPlus, 2020). For this occasion, the game has been remade in Ren'Py, featuring most of the original content, with a few new additions and an answer to an unsolved crime.
+            James Apline, a new employee of Script Entertainment, is suddenly involved in a murder case following the death of one of his closest friends and various suspicious activity.
+        </p>
+    </Section>
     <Section contentAlign="center">
         <div class="video-container">
             <iframe 
@@ -23,12 +31,6 @@ import ta5a_image from "@images/TA5A_Home.png"
                 loading="lazy"
             />
         </div>
-    </Section>
-    <Section contentAlign="left">
-        <p>
-            <b>The Awakening: 5th Anniversary</b> celebrates the 5th anniversary of the release of The Awakening for Microsoft PowerPoint (TechGamesPlus, 2020). For this occasion, the game has been remade in Ren'Py, featuring most of the original content, with a few new additions and an answer to an unsolved crime.
-            James Apline, a new employee of Script Entertainment, is suddenly involved in a murder case following the death of one of his closest friends and various suspicious activity.
-        </p>
     </Section>
     <Section contentAlign="left">
         <h2>Questions and Answers</h2>
@@ -100,5 +102,9 @@ import ta5a_image from "@images/TA5A_Home.png"
             height: 100%;
             border: 0;
         }
+    }
+    
+    h3 {
+        text-decoration: underline;
     }
 </style>
