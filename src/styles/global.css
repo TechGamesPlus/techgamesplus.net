@@ -22,7 +22,7 @@
     --button-border-color: #714B67;
     --button-border-radius: 0.4rem;
     --button-text-color: #FFFFFF;
-    --button-padding: 0.375rem 1rem;
+    --button-padding: 0.375rem 0.8rem;
 }
 
 *, *::before, *::after {
