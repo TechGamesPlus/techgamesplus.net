@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import Base from "@layouts/Base.astro";
 import Kickoff from "@components/Kickoff.astro";
 import TextImageSection from "@components/TextImageSection.astro";
-import LinkButton from "@components/LinkButton.astro";
+import Button from "@components/Button.astro";
 
 import kickoff_image from "@images/kickoff.jpg"
 import airCS_image from "@images/AirCS.png"
@@ -30,7 +30,7 @@ import logoImage from "@images/logo.png"
 		<p>
 			My upcoming Visual Novel game to celebrate the fifth anniversary of The Awakening (2020)
 		</p>
-		<LinkButton href="/projects/the-awakening-5th-anniversary">View Here</LinkButton>
+		<Button href="/projects/the-awakening-5th-anniversary">View Here</Button>
 	</TextImageSection>
 	<TextImageSection
 		imageSide="left"
@@ -41,6 +41,6 @@ import logoImage from "@images/logo.png"
 		<p>
 			My POV Timelapse on the AirCS Race 2025 is available for viewing
 		</p>
-		<LinkButton href="https://youtu.be/PUR4POmtYmg" target="_blank">View Here</LinkButton>
+		<Button href="https://youtu.be/PUR4POmtYmg" target="_blank">View Here</Button>
 	</TextImageSection>
 </Base>
