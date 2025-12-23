@@ -4,7 +4,7 @@ import Kickoff from "@components/Kickoff.astro";
 import Section from "@components/Section.astro";
 
 import ta5a_image from "@images/TA5A_Home.png"
-import LinkButton from "@components/LinkButton.astro";
+import Button from "@components/Button.astro";
 ---
 
 <Base title="The Awakening 5th Anniversary" description="A game by TechGamesPlus">
@@ -12,7 +12,10 @@ import LinkButton from "@components/LinkButton.astro";
         <h1>The Awakening</h1>
         <h2>5th Anniversary</h2>
         <p>A game by TechGamesPlus</p>
-        <LinkButton href="https://techgamesplus.itch.io/the-awakening-5th-anniversary">Download Now</LinkButton>
+        <Button
+            href="https://techgamesplus.itch.io/the-awakening-5th-anniversary"
+            icon="material-symbols:download-rounded"
+        >Download Now</Button>
     </Kickoff>
     <Section contentAlign="left">
         <p>
