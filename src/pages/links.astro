@@ -17,7 +17,7 @@ import kickoff_image from "@images/kickoff.jpg"
     </Kickoff>
     <Section contentAlign="center">
         <h2>Socials</h2>
-        <div>
+        <div class="badge-box">
             <Badge
                 src="/88x31/bluesky.png"
                 label="Bluesky"
@@ -41,3 +41,12 @@ import kickoff_image from "@images/kickoff.jpg"
         </div>
     </Section>
 </Base>
+
+<style>
+    .badge-box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+</style>
