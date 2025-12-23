@@ -2,6 +2,7 @@
 import Base from "@layouts/Base.astro";
 import Kickoff from "@components/Kickoff.astro";
 import Section from "@components/Section.astro";
+import Badge from "@components/Badge.astro";
 
 import kickoff_image from "@images/kickoff.jpg"
 ---
@@ -16,11 +17,27 @@ import kickoff_image from "@images/kickoff.jpg"
     </Kickoff>
     <Section contentAlign="center">
         <h2>Socials</h2>
-        <ul class="links-list">
-            <li><a href="https://bsky.app/profile/techgamesplus.net">Bluesky</a></li>
-            <li><a href="https://twitter.com/TechGamesPlus07">Twitter</a></li>
-            <li><a href="https://www.youtube.com/@TechGamesPlus">YouTube</a></li>
-            <li><a href="https://www.twitch.tv/techgamesplus">Twitch</a></li>
-        </ul>
+        <div>
+            <Badge
+                src="/88x31/bluesky.png"
+                label="Bluesky"
+                href="https://bsky.app/profile/techgamesplus.net/"
+            />
+            <Badge
+                src="/88x31/twitterbutton.gif"
+                label="Twitter (Fuck X)"
+                href="https://twitter.com/TechGamesPlus/"
+            />
+            <Badge
+                src="/88x31/YouTube.png"
+                label="YouTube"
+                href="https://youtube.com/TechGamesPlus/"
+            />
+            <Badge
+                src="/88x31/Twitch.png"
+                label="Twitch"
+                href="https://twitch.tv/techgamesplus/"
+            />
+        </div>
     </Section>
 </Base>
