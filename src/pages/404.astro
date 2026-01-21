@@ -1,0 +1,16 @@
+---
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import kickoff_image from "@images/kickoff.jpg"
+---
+
+<Base title="404: Page Not Found" description="404: Page Not Found">
+    <Kickoff contentAlign="center" backgroundImage={kickoff_image} backgroundAlt="A photo of a coastline">
+        <h1>404</h1>
+        <h2>Page Not Found</h2>
+        <p>
+            This page does not exist<br />
+            Maybe try find one that does instead
+        </p>
+    </Kickoff>
+</Base>
