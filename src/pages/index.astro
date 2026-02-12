@@ -11,29 +11,43 @@ import ta5a_image from "@images/TA5A_Home.png"
 import logoImage from "@images/logo.png"
 ---
 
-<Base title="Home" description="Welcome to my personal website!">
+<Base title="City of Greater Geraldton" description="The kickoff page for my political endeavours for the City of Greater Geraldton">
 	<Kickoff contentAlign="left" backgroundImage={kickoff_image} backgroundAlt="A photo of a coastline">
-		<h1>Hi!</h1>
-		<h2>It's me: TGP!</h2>
+		<h1>Welcome!</h1>
+		<h2>My name is Ethan Dahlberg :)</h2>
 		<p>
-			Who am I? What do I do?<br/>
-			Nobody knows, but apparently I have a website :D
+			I am a lifelong resident of the City of Greater Geraldton<br/>
+			with visions for the future of our city and state.<br/>
+			<br/>
+			I also do personal technological activities as well, including<br/>
+			gaming and other video content in my spare time.
 		</p>
-		<Image src={logoImage} alt="TGP Logo" width="400" loading="eager"/>
+		<Image src={logoImage} alt="TGP Logo" width="300" loading="eager"/>
 	</Kickoff>
 	<TextImageSection
 		imageSide="right"
 		imageSrc={ta5a_image}
 		imageAlt="A hand drawn building."
 	>
-		<h2>The Awakening: 5th Anniversary</h2>
+		<h2>City of Greater Geraldton</h2>
 		<p>
-			My upcoming Visual Novel game to celebrate the fifth anniversary of The Awakening (2020)
+			These pages follow my political endeavours for the City of Greater Geraldton in Western Australia
 		</p>
 		<Button href="/projects/the-awakening-5th-anniversary">View Here</Button>
 	</TextImageSection>
 	<TextImageSection
 		imageSide="left"
+		imageSrc={ta5a_image}
+		imageAlt="A hand drawn building."
+	>
+		<h2>The Awakening: 5th Anniversary</h2>
+		<p>
+			My Visual Novel game to celebrate the fifth anniversary of The Awakening (2020)
+		</p>
+		<Button href="/projects/the-awakening-5th-anniversary">View Here</Button>
+	</TextImageSection>
+	<TextImageSection
+		imageSide="right"
 		imageSrc={airCS_image}
 		imageAlt="Train station made in Minecraft."
 	>
