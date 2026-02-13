@@ -43,7 +43,7 @@ body {
 }
 h1 {
     font-size: 5rem;
-    font-weight: 300;
+    font-weight: bold;
     font-family: "Inter Tight", sans-serif;
 }
 h2 {
