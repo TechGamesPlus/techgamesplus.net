@@ -1,0 +1,41 @@
+---
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import TextImageSection from "@components/TextImageSection.astro";
+
+import geroPhoto from "@images/geraldton_feature.jpg"
+import passStEmus from "@images/cgg/2026-02/passStEmus.jpg"
+import alexStRoundabout from "@images/cgg/2026-02/alexanderStRoundabout.jpg"
+---
+
+<Base title="City of Greater Geraldton" description="The homepage for my CGG updates">
+    <Kickoff contentAlign="center" backgroundImage={geroPhoto} backgroundAlt="A hand drawn building.">
+        <h1>City of Greater Geraldton</h1>
+        <p>This page is where I will provide community updates in regards to the City of Greater Geraldton</p>
+    </Kickoff>
+    <TextImageSection
+        imageSide="right"
+        imageSrc={passStEmus}
+        imageAlt="A photo of metalic emus on a roundabout"
+    >
+        <h2>Emus of Pass St Roundabout</h2>
+        <p>
+            During the reconstruction of the Pass St roundabout next to Adams Store,<br/>
+            the City of Greater Geraldton removed the metalic emus from the<br/>
+            roundabout due to safety concerns, yet residents would like to see<br/>
+            their return.
+        </p>
+    </TextImageSection>
+    <TextImageSection
+        imageSide="left"
+        imageSrc={alexStRoundabout}
+        imageAlt="A photo of metalic emus on a roundabout"
+    >
+        <h2>Alexander Street Roundabout</h2>
+        <p>
+            The City of Greater Geraldton has proposed to construct a roundabout<br/>
+            in Utakarra that connects Flores Road, Horwood Road, and Alexander<br/>
+            Street, replacing the two T intersections.
+        </p>
+    </TextImageSection>
+</Base>
