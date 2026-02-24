@@ -5,6 +5,7 @@ import Section from "@components/Section.astro";
 
 import ta5a_image from "@images/TA5A_Home.png"
 import Button from "@components/Button.astro";
+import Badge from "@components/Badge.astro";
 ---
 
 <Base title="The Awakening 5th Anniversary" description="A game by TechGamesPlus">
@@ -14,6 +15,7 @@ import Button from "@components/Button.astro";
         <p>A game by TechGamesPlus</p>
         <Button
             href="https://techgamesplus.itch.io/the-awakening-5th-anniversary"
+            target="_blank"
             icon="material-symbols:download-rounded"
         >Download Now</Button>
     </Kickoff>
@@ -37,6 +39,10 @@ import Button from "@components/Button.astro";
     </Section>
     <Section contentAlign="left">
         <h2>Questions and Answers</h2>
+        <h3>When has this game last been updated?</h3>
+        <p>
+            The current version of this game is <b>v1.0.1.1</b> which was released on December 19th, 2025.
+        </p>
         <h3>What is the age rating of the game?</h3>
         <p>
             <b>The Awakening: 5th Anniversary</b> does not have an official classification rating, however, the author (myself) self-classifies this as PG-13.
@@ -82,11 +88,10 @@ import Button from "@components/Button.astro";
         </p>
         <h3>Will you accept donations for the game?</h3>
         <p>
-            No.
-            <br/>
-            If I decided to earn money off of this game, I would have to pay royalties to certain people like Jaximic, who made (almost) all of the music for this game. Other songs were downloaded from the YouTube Audio Library, and almost all the sound effects were downloaded elsewhere.
-            <br/>
-            Despite these songs practically being royalty-free, I find it morally wrong to earn money off of someone else's creation.
+            <b><u><i>No.</i></u></b><br/>
+            There are many things that have been done during the development of this game that are going to hinder me from ever earning a single cent off of this game. For starters, a lot of the content used in this game (mostly sound effects, but some of the images were downloaded from Google and edited and all the music especially) are not my property.<br/>
+            Some of the music were sourced from the YouTube Audio Library and thus I'm able to under the Audio Library license, however that's only a couple of songs. Most of the songs are composed by Jaximic, who composed these songs specifically for the game and thus allowed me to use them free of charge, but to earn money off of these songs without paying some sort of royalty to him would be a breach of trust, put me into some sort of legal drama, and also just utterly fucking disgraceful.<br/>
+            I am also using the Community edition of IntelliJ IDEA, which under IntelliJ Non-Commercial licenses prevents me from using it for commercial purposes. I interpret this as being ineligible to earn money or else pay royalties to IntelliJ.<br/>
         </p>
     </Section>
 </Base>
