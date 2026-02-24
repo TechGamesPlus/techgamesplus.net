@@ -5,8 +5,10 @@ interface Props {
     backgroundImage: ImageMetadata;
     backgroundAlt: string;
     contentAlign: "left" | "center" | "right";
+    mobileBackgroundOffset?: number;
 }
-const { backgroundImage, backgroundAlt, contentAlign } = Astro.props as Props;
+const { backgroundImage, backgroundAlt, contentAlign, mobileBackgroundOffset = 50 } = Astro.props as Props;
+const mobileBackgroundOffsetValue = `${mobileBackgroundOffset}px`;
 
 let alignItems = "center";
 let textAlign = "center";
@@ -25,14 +27,14 @@ switch(contentAlign) {
 }
 ---
 
-<section style={`background-image: url(${backgroundImage.src})`}>
+<section style={`background-image: url(${backgroundImage.src});`}>
     <div class="kickoff-content" style={`align-items: ${alignItems}; text-align: ${textAlign};`}>
         <slot />
     </div>
     <div class="background-filter" />
 </section>
 
-<style>
+<style define:vars={{ mobileBackgroundOffsetValue }}>
     section {
         display: flex;
         min-height: calc(100vh - 56px);
@@ -76,6 +78,11 @@ switch(contentAlign) {
         }
     }
 
+    @media (max-width: 650px) {
+        section {
+            background-position: var(--mobileBackgroundOffsetValue) center;
+        }
+    }
     @media (prefers-reduced-motion: reduce) {
         .kickoff-scroll-btn { transition: none; }
     }
