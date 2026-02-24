@@ -45,6 +45,8 @@ h1 {
     font-size: 5rem;
     font-weight: bold;
     font-family: "Inter Tight", sans-serif;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 h2 {
     font-size: 2.5rem;
