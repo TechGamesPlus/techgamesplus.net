@@ -5,10 +5,13 @@ interface Props {
     backgroundImage: ImageMetadata;
     backgroundAlt: string;
     contentAlign: "left" | "center" | "right";
-    mobileBackgroundOffset?: number;
+    mobileBackgroundOffset?: number | string;
 }
 const { backgroundImage, backgroundAlt, contentAlign, mobileBackgroundOffset } = Astro.props as Props;
-const mobileBackgroundOffsetValue = `${mobileBackgroundOffset}px`;
+let mobileBackgroundOffsetValue = mobileBackgroundOffset ?? "center";
+if (typeof mobileBackgroundOffsetValue === "number") {
+    mobileBackgroundOffsetValue = `${mobileBackgroundOffsetValue}px`;
+}
 
 let alignItems = "center";
 let textAlign = "center";
