@@ -39,3 +39,16 @@ let { title, description } = Astro.props;
     }
 </style>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // loop over all section elements, find the first element which doesn't have the class "kickoff" and add the id "main-content" to it
+        const sections = document.querySelectorAll("section");
+        for (const section of sections) {
+            if (!section.classList.contains("kickoff")) {
+                section.setAttribute("id", "main-content");
+                break;
+            }
+        }
+    });
+</script>
+

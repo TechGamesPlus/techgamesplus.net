@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets"
 import type { ImageMetadata } from "astro";
+import {Icon} from "astro-icon/components";
 interface Props {
     backgroundImage: ImageMetadata;
     backgroundAlt: string;
@@ -30,11 +31,14 @@ switch(contentAlign) {
 }
 ---
 
-<section style={`background-image: url(${backgroundImage.src});`}>
+<section class="kickoff" style={`background-image: url(${backgroundImage.src});`}>
     <div class="kickoff-content" style={`align-items: ${alignItems}; text-align: ${textAlign};`}>
         <slot />
     </div>
     <div class="background-filter" />
+    <a onclick=`document.getElementById("main-content").scrollIntoView({ behavior: "smooth" });`>
+        <Icon class="scroll" name="material-symbols:arrow-circle-down" width={30} height={30} />
+    </a>
 </section>
 
 <style define:vars={{ mobileBackgroundOffsetValue }}>
@@ -46,6 +50,14 @@ switch(contentAlign) {
         position: relative;
         background-color: #8CC4F7;
         overflow: hidden;
+
+        .scroll {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+        }
     }
     .background-filter {
         top: 0;
@@ -80,7 +92,7 @@ switch(contentAlign) {
             color: white;
         }
     }
-
+    
     @media (max-width: 650px) {
         section {
             background-position: var(--mobileBackgroundOffsetValue) center;
