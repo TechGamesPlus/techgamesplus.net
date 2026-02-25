@@ -28,6 +28,7 @@ const { imageSrc, imageAlt, imageSide } = Astro.props;
     }
     .section-content {
         max-width: 1290px;
+        max-height: 550px;
         margin: 0 auto;
         padding: 0 15px;
         width: 100%;
@@ -41,11 +42,15 @@ const { imageSrc, imageAlt, imageSide } = Astro.props;
         .image-content {
             width: 50%;
             max-width: 100%;
+            max-height: 50%;
+            height: auto;
         }
 
         .image-content img {
             max-width: 100%;
+            max-height: 100%;
             height: auto;
+            width: auto;
             border-radius: var(--border-radius);
         }
     }
