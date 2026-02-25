@@ -1,0 +1,50 @@
+---
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import Section from "@components/Section.astro";
+import TextImageSection from "@components/TextImageSection.astro"
+
+import edithCowan from "@images/cgg/2026-02/edithCowan.jpg"
+---
+
+<Base title="Unveiling of the Edith Cowan Statue" description="Discussion about the statue of Australia's first female politician">
+    <Kickoff contentAlign="center" backgroundImage={edithCowan} backgroundAlt="A photo of a statue of a lady">
+        <h1>Unveiling of the Edith Cowan Statue</h1>
+        <p>
+            After many months of delay in transit, the City of Greater Geraldton has finally unveiled a statue of the first Australian woman to serve as a member of parliament, Edith Dircksey Cowan, and whom was born at Glengarry Station near Geraldton.
+        </p>
+    </Kickoff>
+    <Section contentAlign="left">
+        On February 25th, 2026, the City of Greater Geraldton launched the unveiling of the statue of Australia's first female politician, Edith Dircksey Cowan. It came after many months of delays in transportation, but nevertheless, Edith Cowan has now been further memorialised in her home.
+    </Section>
+    <TextImageSection imageAlt="A photo of a woman" imageSide="left" imageSrc={edithCowan}>
+        <p>
+            Text Goes Here
+        </p>
+    </TextImageSection>
+</Base>
+
+<style>
+/*    .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; !* 16:9 Aspect Ratio *!
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }*/
+
+    h2 {
+        font-weight: bold;
+    }
+
+    h3 {
+        text-decoration: underline;
+    }
+</style>
