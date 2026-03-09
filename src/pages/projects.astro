@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import TextImageSection from "@components/TextImageSection.astro";
+import Button from "@components/Button.astro";
+
+import kickoffImage from "@images/projects/kickoff.jpg"
+import tgpWebsite from "@images/projects/tgpWebsite.jpg"
+import ta5aHome from "@images/projects/TA5A_Home.png"
+---
+
+<Base title="Projects" description="Launch page for my hobby projects">
+	<Kickoff contentAlign="center" backgroundImage={kickoffImage} backgroundAlt="A photo of a computer screen featuring a bunch of code">
+		<h1>Hobbies & Projects</h1>
+		<p>
+			These are some of the things I do here and there
+		</p>
+	</Kickoff>
+	<TextImageSection
+		imageSide="right"
+		imageSrc={tgpWebsite}
+		imageAlt="A photo of a computer screen featuring a bunch of code"
+	>
+		<h2>techgamesplus.net</h2>
+		<p>
+			The website that you are currently on. This link will take you to the GitHub repository, where you can see the code that brings this site to life.
+		</p>
+		<Button href="https://github.com/TechGamesPlus/techgamesplus.net" target="_blank">View Here</Button>
+	</TextImageSection>
+	<TextImageSection
+		imageSide="left"
+		imageSrc={ta5aHome}
+		imageAlt="A hand drawn building."
+	>
+		<h2>The Awakening: 5th Anniversary</h2>
+		<p>
+			My Visual Novel game to celebrate the fifth anniversary of The Awakening (2020)
+		</p>
+		<Button href="/projects/the-awakening-5th-anniversary">View Here</Button>
+	</TextImageSection>
+</Base>
