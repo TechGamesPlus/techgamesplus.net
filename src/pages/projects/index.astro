@@ -2,12 +2,13 @@
 import { Image } from "astro:assets";
 import Base from "@layouts/Base.astro";
 import Kickoff from "@components/Kickoff.astro";
-import TextImageSection from "@components/TextImageSection.astro";
+import NavCard from "@components/NavCard.astro";
 import Button from "@components/Button.astro";
 
 import kickoffImage from "@images/projects/kickoff.jpg"
 import tgpWebsite from "@images/projects/tgpWebsite.jpg"
 import ta5aHome from "@images/projects/TA5A_Home.png"
+import airCS_image from "@images/AirCS.png"
 ---
 
 <Base title="Projects" description="Launch page for my hobby projects">
@@ -17,7 +18,7 @@ import ta5aHome from "@images/projects/TA5A_Home.png"
 			These are some of the things I do here and there
 		</p>
 	</Kickoff>
-	<TextImageSection
+	<NavCard
 		imageSide="right"
 		imageSrc={tgpWebsite}
 		imageAlt="A photo of a computer screen featuring a bunch of code"
@@ -27,8 +28,8 @@ import ta5aHome from "@images/projects/TA5A_Home.png"
 			The website that you are currently on. This link will take you to the GitHub repository, where you can see the code that brings this site to life.
 		</p>
 		<Button href="https://github.com/TechGamesPlus/techgamesplus.net" target="_blank">View Here</Button>
-	</TextImageSection>
-	<TextImageSection
+	</NavCard>
+	<NavCard
 		imageSide="left"
 		imageSrc={ta5aHome}
 		imageAlt="A hand drawn building."
@@ -38,5 +39,16 @@ import ta5aHome from "@images/projects/TA5A_Home.png"
 			My Visual Novel game to celebrate the fifth anniversary of The Awakening (2020)
 		</p>
 		<Button href="/projects/the-awakening-5th-anniversary">View Here</Button>
-	</TextImageSection>
+	</NavCard>
+	<NavCard
+		imageSide="right"
+		imageSrc={airCS_image}
+		imageAlt="Train station made in Minecraft."
+	>
+		<h2>AirCS Race 2025</h2>
+		<p>
+			My POV Timelapse on the AirCS Race 2025 is available for viewing
+		</p>
+		<Button href="https://youtu.be/PUR4POmtYmg" target="_blank">View Here</Button>
+	</NavCard>
 </Base>

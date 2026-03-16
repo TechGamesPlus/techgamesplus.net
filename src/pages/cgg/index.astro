@@ -1,7 +1,7 @@
 ---
 import Base from "@layouts/Base.astro";
 import Kickoff from "@components/Kickoff.astro";
-import TextImageSection from "@components/TextImageSection.astro";
+import NavCard from "@components/NavCard.astro";
 import Button from "@components/Button.astro"
 
 import geroPhoto from "@images/cgg/geraldton_feature.jpg"
@@ -15,7 +15,7 @@ import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PO
         <h1>City of Greater Geraldton</h1>
         <p>This page is where I will provide community updates in regards to the City of Greater Geraldton</p>
     </Kickoff>
-    <TextImageSection
+    <NavCard
         imageSide="right"
         imageSrc={edithCowan}
         imageAlt="A photo of a statue of a lady in front of a building that says COURTHOUSE"
@@ -25,8 +25,8 @@ import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PO
             After many months of delays in transit, the statue of Edith Dirksey Cowan, the first woman in Australia to serve as a member of parliament, has been erected in her square opposite the courtyard.
         </p>
         <Button href="cgg/edith-cowan-statue">View Here</Button>
-    </TextImageSection>
-    <TextImageSection
+    </NavCard>
+    <NavCard
         imageSide="left"
         imageSrc={passStEmus}
         imageAlt="A photo of metalic emus on a roundabout"
@@ -39,8 +39,8 @@ import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PO
             their return.
         </p>
         <Button href="cgg/pass-st-emus">View Here</Button>
-    </TextImageSection>
-    <TextImageSection
+    </NavCard>
+    <NavCard
         imageSide="right"
         imageSrc={alexStRoundabout}
         imageAlt="A photo of metalic emus on a roundabout"
@@ -52,7 +52,7 @@ import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PO
             Street, replacing the two T intersections.
         </p>
         <h3>Page Coming Soon</h3>
-    </TextImageSection>
+    </NavCard>
 </Base>
 <style>
     h3 {
