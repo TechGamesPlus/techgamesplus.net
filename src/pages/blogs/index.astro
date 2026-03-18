@@ -5,28 +5,30 @@ import NavCard from "@components/NavCard.astro";
 import Button from "@components/Button.astro"
 
 import kickoffPhoto from "@images/blogs/kickoff-2026.jpg"
-import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PORTRAIT.jpg"
+import march2026 from "@images/blogs/kickoff-2026.jpg"
+/* Yes, I know that's the exact same image, but these images are subject to change */
 ---
 
 <Base title="My Blogs" description="The homepage for my blogs and other personal updates">
     <Kickoff contentAlign="center" backgroundImage={kickoffPhoto} backgroundAlt="A hand drawn building.">
-        <h1>Blogs & Updates</h1>
+        <h1><b>Blogs & Updates</b></h1>
         <p>This page is where I will share personal updates and developments in my life :)</p>
         <Button href="blogs/2026-03/church-camp">Latest Blog: <b>March 2026: Church Camp</b></Button>
     </Kickoff>
     <NavCard
         imageSide="right"
-        imageSrc={edithCowan}
+        imageSrc={march2026}
         imageAlt="A photo of a statue of a lady in front of a building that says COURTHOUSE"
     >
-        <h2>March 2026</h2>
-        <p>
-            After many months of delays in transit, the statue of Edith Dirksey Cowan, the first woman in Australia to serve as a member of parliament, has been erected in her square opposite the courtyard.
-        </p>
+        <h1>March 2026</h1>
         <Button href="blogs/2026-03">View Here</Button>
     </NavCard>
 </Base>
 <style>
+    h1 {
+        font-weight: normal;
+    }
+
     h3 {
         text-decoration: underline;
     }
