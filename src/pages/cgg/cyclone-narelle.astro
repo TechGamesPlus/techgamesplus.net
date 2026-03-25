@@ -1,0 +1,91 @@
+---
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import Section from "@components/Section.astro";
+import TextImageSection from "@components/TextImageSection.astro"
+import Button from "@components/Button.astro"
+
+import kickoff from "@images/cgg/cyclone-narelle/BOM16-9.png"
+import narelleMap from "@images/cgg/cyclone-narelle/BOMFull.png"
+---
+
+<Base title="Cyclone Narelle" description="Discussion about the statue of Australia's first female politician">
+    <Kickoff contentAlign="center" backgroundImage={kickoff} backgroundAlt="A photo of a statue of a lady" mobileBackgroundOffset={-1000}>
+        <h1>Tropical Cyclone Narelle</h1>
+        <h3>
+            This page is to detail the basics of important information in regards to Tropical Cyclone Narelle, which is expected to pass through Geraldton in the coming hours.<br/>
+            <br/>
+            Do not solely rely on this page for information as this page cannot be frequently updated
+        </h3>
+    </Kickoff>
+    <Section contentAlign="center">
+        <h3>
+            If you are in a life-threatening situation at any point, call Triple Zero (000) immediately on a mobile device.<br/>
+            Landline services in Geraldton will be affected, so you will need a mobile phone.
+        </h3>
+    </Section>
+    <TextImageSection imageAlt="A map of the path of a cyclone along the coast of Western Australia" imageSide="right" imageSrc={narelleMap}>
+        <p><u>
+            Published: <b>March 25th, 2026</b>
+        </u></p>
+        <h2>
+            Preface
+        </h2>
+        <p>
+            This weekend (March 28th), we are expected to see another cyclone hit Geraldton. There has not been a cyclone here since Cyclone Seroja back in 2021.<br/>
+            <br/>
+            Cyclone Narelle is expected to hit Geraldton as a <u>Category 2</u> tropical cyclone. This means that:<br/>
+            - It's wind speed can range between 89 and 117 km/h<br/>
+            - Wind gusts can range between 125 and 164 km/h<br/>
+            - Winds are described as "destructive". This means that homes may suffer minor danage; signs, trees, and caravans may suffer significant damage; crops will suffer heavy damages; power and mobile services may go out.<br/>
+            <br/>
+            For more information about Cyclones, I'll refer you to visit the Bureau of Meteorology's page about cyclone categories:<br/>
+            <a href="https://www.bom.gov.au/resources/learn-and-explore/tropical-cyclone-knowledge-centre/tropical-cyclone-categories">https://www.bom.gov.au/resources/learn-and-explore/tropical-cyclone-knowledge-centre/tropical-cyclone-categories</a>
+        </p>
+    </TextImageSection>
+    <Section contentAlign="left">
+        <h2>
+            Resources Available
+        </h2>
+        <Button href="https://www.dfes.wa.gov.au/hazard-information/cyclone/prepare" target="_blank"><b>DFES:</b> Information on how to prepare your home and property</Button>
+        <p></p>
+        <Button href="https://www.emergency.wa.gov.au" target="_blank"><b>Emergency WA:</b> Stay up to date with the latest warnings</Button>
+        <p></p>
+        <Button href="https://apps.apple.com/au/app/emergency-wa/id6738075801" target="_blank"><b>Emergency WA:</b> Download the app from the App Store</Button>
+        <p></p>
+        <Button href="https://play.google.com/store/apps/details?id=au.gov.wa.dfes.emergencywa&hl=en-US&pli=1" target="_blank"><b>Emergency WA:</b> Download the app from Google Play</Button>
+        <p></p>
+        <Button href="https://bom.gov.au/cyclone" target="_blank"><b>Bureau of Meteorology:</b> Current BOM Watch and Warnings</Button>
+        <p></p>
+        <Button href="https://www.facebook.com/cityofgreatergeraldton" target="_blank">The City of Greater Geraldton will provide updates wherever possible across social media (i.e. Facebook)</Button>
+        <p>
+            <br/>
+            <b><u>ABC Midwest and Wheatbelt</u></b> is the official emergency broadcaster for the City of Greater Geraldton. Tune in at <b><u>828 AM</u></b>. It is also available through the Emergency WA app if you do not have a radio but have access to mobile data.
+        </p>
+    </Section>
+</Base>
+
+<style>
+    .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    h3 {
+        text-decoration: underline;
+    }
+</style>

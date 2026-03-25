@@ -8,6 +8,7 @@ import geroPhoto from "@images/cgg/geraldton_feature.jpg"
 import passStEmus from "@images/cgg/pass-st-emus/passStEmus.jpg"
 import alexStRoundabout from "@images/cgg/alexanderStRoundabout.jpg"
 import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PORTRAIT.jpg"
+import narelle from "@images/cgg/cyclone-narelle/BOM16-9.png"
 ---
 
 <Base title="City of Greater Geraldton" description="The homepage for my CGG updates">
@@ -17,6 +18,17 @@ import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PO
     </Kickoff>
     <NavCard
         imageSide="right"
+        imageSrc={narelle}
+        imageAlt="A map of the path of a cyclone along the coast of Western Australia"
+    >
+        <h2>Tropical Cyclone Narelle</h2>
+        <p>
+            Important information regarding Tropical Cyclone Narelle and its passage through the City of Greater Geraldton.
+        </p>
+        <Button href="cgg/cyclone-narelle">View Here</Button>
+    </NavCard>
+    <NavCard
+        imageSide="left"
         imageSrc={edithCowan}
         imageAlt="A photo of a statue of a lady in front of a building that says COURTHOUSE"
     >
@@ -27,7 +39,7 @@ import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PO
         <Button href="cgg/edith-cowan-statue">View Here</Button>
     </NavCard>
     <NavCard
-        imageSide="left"
+        imageSide="right"
         imageSrc={passStEmus}
         imageAlt="A photo of metalic emus on a roundabout"
     >
@@ -41,7 +53,7 @@ import edithCowan from "@images/cgg/edith-cowan-statue/PXL_20260225_061444023.PO
         <Button href="cgg/pass-st-emus">View Here</Button>
     </NavCard>
     <NavCard
-        imageSide="right"
+        imageSide="left"
         imageSrc={alexStRoundabout}
         imageAlt="A photo of metalic emus on a roundabout"
     >

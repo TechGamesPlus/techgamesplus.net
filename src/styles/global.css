@@ -53,6 +53,9 @@ h2 {
     font-weight: 500;
     font-family: "Inter Tight", sans-serif;
 }
+h3 {
+    text-decoration: underline;
+}
 p, ul {
     margin-top: 0;
 }
