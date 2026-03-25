@@ -6,10 +6,11 @@ import Button from "@components/Button.astro"
 
 import kickoffPhoto from "@images/blogs/kickoff-2026.jpg"
 import churchCamp from "@images/blogs/2026-03/church-camp/kickoff.jpg"
+import furdu19 from "@images/blogs/2026-03/19-days-to-furdu/kickoff.jpg"
 ---
 
 <Base title="March 2026 Blogs" description="The homepage for my March 2026 updates">
-    <Kickoff contentAlign="center" backgroundImage={kickoffPhoto} backgroundAlt="A hand drawn building.">
+    <Kickoff contentAlign="center" backgroundImage={kickoffPhoto} backgroundAlt="A photo of a coastline.">
         <h1>March 2026</h1>
         <p>
             These are the updates I provided during March 2026
@@ -17,8 +18,20 @@ import churchCamp from "@images/blogs/2026-03/church-camp/kickoff.jpg"
     </Kickoff>
     <NavCard
         imageSide="right"
+        imageSrc={furdu19}
+        imageAlt="A photo of a whiteboard. It contains a teddy bear drawing on the left and text on the right that says '19 Days until FurDU :3'"
+    >
+        <h2>19 Days until FurDU</h2>
+        <h3>Published: <b>March 25th, 2026</b></h3>
+        <p>
+            This is my first holiday that I'm going on by myself, and to my first furry convention at the same time. This details the nerve-racking feelings that I've got at the time of publication.
+        </p>
+        <Button href="2026-03/19-days-to-furdu">View Here</Button>
+    </NavCard>
+    <NavCard
+        imageSide="left"
         imageSrc={churchCamp}
-        imageAlt="A photo of a statue of a lady in front of a building that says COURTHOUSE"
+        imageAlt="A photo of a watermelon with a face drawn on it"
     >
         <h2>Church Camp</h2>
         <h3>Friday 13th - Sunday 15th</h3>
