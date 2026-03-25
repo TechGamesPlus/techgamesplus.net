@@ -1,0 +1,73 @@
+---
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import TextImageSection from "@components/TextImageSection.astro";
+import Section from "@components/Section.astro"
+
+import kickoffPhoto from "@images/blogs/2026-03/19-days-to-furdu/kickoff.jpg"
+import bali2024 from "@images/blogs/2026-03/19-days-to-furdu/IMG_4418.jpg"
+import UpBank from "@images/blogs/2026-03/19-days-to-furdu/UpBank.png"
+---
+
+<Base title="19 Days until FurDU" description="My March 2026 blog post 19 days before I leave for FurDU">
+    <Kickoff contentAlign="center" backgroundImage={kickoffPhoto} backgroundAlt="A photo of a whiteboard. It contains a teddy bear drawing on the left and text on the right that says '19 Days until FurDU :3'">
+        <h1>19 Days until FurDU</h1>
+        <p>
+            I'm going on holidays very soon. I'm very nervous about it, so I wanted to share what I'm feeling.
+        </p>
+    </Kickoff>
+    <Section contentAlign="left">
+        <p><u>
+            Published: <b>March 25th, 2026</b>
+        </u></p>
+        <p>
+            I've never really gone on holidays before.
+        </p>
+    </Section>
+    <TextImageSection imageAlt="A photo of a person wearing purple and black socks and arm warmers, holding their phone above their head to take a photo of themself in the mirror of a Balinese hotel bathroom. How gay is that?" imageSide="right" imageSrc={bali2024}>
+        <p>
+            When my family usually goes on "holidays", that basically insinuates that we're going away to either Busselton in the south-west of WA, or Carnamah in the state's Wheatbelt, but that doesn't mean we're going on holidays specifically. That just means we're going to see our family.<br/>
+            <br/>
+            I've only ever been outside of WA twice in my life. Once was back in January 2019 when I was about 11 years old. I was doing Scouts at the time, and the troop was really preparing for me to attend the 2019 Australian Jamboree (AJ2019). This was a 10-day camp that was held in Tailem Bend in South Australia, so I was traveling interstate for the first time in my life.<br/>
+            <br/>
+            I remember being on that plane those many years ago. I had never been on a plane in my life before that, and within three months, I had already gone on six different planes (Twice were between Geraldton and Perth, and then the remaining two was between Perth and Adelaide).<br/>
+            <br/>
+            That was the last time that I went on a commercial plane. I had also sat in the plane of the company that does charter flights between Geraldton and the Abrolhos Islands, who offered to take a handful of our scouting troop on a flight around Geraldton.<br/>
+            <br/>
+            The last time I would get to take a flight on a commercial airplane was for my family's holiday to Denpasar (Bali), Indonesia.<br/>
+            <br/>
+            Back in 2024, a year after my Dad broke up with my Mother, his new girlfriend invited us on a holiday to Bali to celebrate her daughter's 21st birthday. Not only was it my first time overseas, but it was also the first time for both my father and my sister. We had to do a whole lot of research about traveling overseas, since we've never done it before. We had to apply for our passports to start off with. At the time, I was under the age of 18, so I had a different process to go through. Whilst it was simple, I had to have my parents sign off on it. My mother got text messages several times from Home Affairs asking if she was going to give permission to have my passport created, but she treated it as spam. It got approved after they called her about it.<br/>
+            <br/>
+            And yes, I took my socks overseas.
+        </p>
+    </TextImageSection>
+    <Section contentAlign="left">
+        <p>
+            But, since then, I've never actually gone on a proper holiday... that is, until I leave in less than three weeks.<br/>
+            <br/>
+            This is the first holiday I'm going on. Over the last year or so, I've been saving up to fund my attendance at the <a href="https://furdu.com.au/" target="_blank">Furry Down Under (FurDU)</a> convention in Surfer's Paradise (Gold Coast), Queensland. It has taken a long time to actually get through everything, but I eventually settled all my accounts for it.<br/>
+            <br/>
+            I know it's not <i>that</i> much of an issue, since I'm flying domestically and not internationally, but this is the first "holiday" that I'm going on, and the first time I'm going solo at that.
+        </p>
+    </Section>
+    <TextImageSection imageAlt="A photo of a banking app asking why I'm sending a fuck ton of money" imageSide="left" imageSrc={UpBank}>
+        <p>
+            There's lots of things that you need to take into consideration when you're about to go on holidays. For starters, how the fuck do you get there to begin with?<br/>
+            <br/>
+            For starters, I don't live in Perth, so I have to figure out how to get from Geraldton to Perth. WA does offer capped airfares for $199 between Geraldton and Perth, but they've only recently changed that so that peak travel days are uncapped (and I just so happen to be traveling during WA school holidays). But, they've only recently halved the price of TransWA bus tickets, so what used to be a $70 one-way ticket to Perth is now only $35. Unfortunately, I couldn't go half even further because my Student SmartRider (the bus cards here) expires at the end of March (and this trip is in April (after March)).<br/>
+            <br/>
+            But then the next question is: Now that I'm in Perth, how do I cross the country to the Gold Coast? Simples! Plane.<br/>
+            <br/>
+            Now, there's two choices of airports to go to: Gold Coast Airport, which leaves me with an hour's bus ride to my accommodation site, or Brisbane Airport, which will triple that time. Of course, I had to go with Gold Coast Airport. Now, finding a direct flight to the Gold Coast was interesting. I went with the cheapest one, which just so happened to be Jetstar. The only two dates that a direct flight was offered between Perth and the Gold Coast was at 11:40pm on the 13th in WA and about 4pm on the 21st, which leaves me with three full days before the convention and two full days after. So, I decided to take advantage of that.<br/>
+            <br/>
+            To avoid Mastercard surcharges (fuck you Mastercard), I decided to PayID Jetstar through my banking app, Up (since they offered PayID). Of course, Up flagged it and thought I was sending off a fuck ton of money to some scammer, but nevertheless it went through.<br/>
+            <br/>
+            The nice thing that Queensland introduced back in 2024 was the 50c fares across all public transport, so travel between the airport and the hotel was pretty easy; plus, FurDU is being hosted at Crowne Plaza in Surfer's Paradise, which is adjacent to the Florida Gardens tram stop.
+        </p>
+    </TextImageSection>
+</Base>
+<style>
+    h3 {
+        text-decoration: underline;
+    }
+</style>
