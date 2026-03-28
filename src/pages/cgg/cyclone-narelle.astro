@@ -7,60 +7,96 @@ import Button from "@components/Button.astro"
 
 import kickoff from "@images/cgg/cyclone-narelle/BOM16-9.png"
 import narelleMap from "@images/cgg/cyclone-narelle/BOMFull.png"
+import exmouth from "@images/cgg/cyclone-narelle/Exmouth.png"
+import rigters from "@images/cgg/cyclone-narelle/Rigters.jpg"
+import guardian from "@images/cgg/cyclone-narelle/GeraldtonGuardian.png"
 ---
 
 <Base title="Cyclone Narelle" description="Discussion about the statue of Australia's first female politician">
     <Kickoff contentAlign="center" backgroundImage={kickoff} backgroundAlt="A photo of a statue of a lady" mobileBackgroundOffset={-1000}>
         <h1>Tropical Cyclone Narelle</h1>
-        <h3>
-            This page is to detail the basics of important information in regards to Tropical Cyclone Narelle, which is expected to pass through Geraldton in the coming hours.<br/>
-            <br/>
-            Do not solely rely on this page for information as this page cannot be frequently updated
-        </h3>
+        <p>
+            Over the weekend, Tropical Cyclone Narelle made landfall along the coast of Western Australia, with the City of Greater Geraldton put on notice that it was coming our way. Now that it has passed us, I would like to reflect back on such a brief emergency.
+        </p>
     </Kickoff>
-    <Section contentAlign="center">
-        <h3>
-            If you are in a life-threatening situation at any point, call Triple Zero (000) immediately on a mobile device.<br/>
-            Landline services in Geraldton will be affected, so you will need a mobile phone.
-        </h3>
-    </Section>
     <TextImageSection imageAlt="A map of the path of a cyclone along the coast of Western Australia" imageSide="right" imageSrc={narelleMap}>
         <p><u>
-            Published: <b>March 25th, 2026</b>
+            Published: <b>March 28th, 2026</b>
         </u></p>
-        <h2>
-            Preface
-        </h2>
         <p>
-            This weekend (March 28th), we are expected to see another cyclone hit Geraldton. There has not been a cyclone here since Cyclone Seroja back in 2021.<br/>
+            This weekend, we saw the "wrath" of Cyclone Narelle as it passed us overnight.<br/>
             <br/>
-            Cyclone Narelle is expected to hit Geraldton as a <u>Category 2</u> tropical cyclone. This means that:<br/>
-            - It's wind speed can range between 89 and 117 km/h<br/>
-            - Wind gusts can range between 125 and 164 km/h<br/>
-            - Winds are described as "destructive". This means that homes may suffer minor danage; signs, trees, and caravans may suffer significant damage; crops will suffer heavy damages; power and mobile services may go out.<br/>
+            At the time that I put this page up, Cyclone Narelle was expected to hit Geraldton as a <u>Category 2</u> tropical cyclone. This meant that:<br/>
+            - It's wind speed could range between 89 and 117 km/h<br/>
+            - Wind gusts could range between 125 and 164 km/h<br/>
+            - Winds were described as "destructive". This meant that homes could suffer minor danage; signs, trees, and caravans could suffer significant damage; crops would suffer heavy damages; power and mobile services could've gone out.<br/>
             <br/>
-            For more information about Cyclones, I'll refer you to visit the Bureau of Meteorology's page about cyclone categories:<br/>
-            <a href="https://www.bom.gov.au/resources/learn-and-explore/tropical-cyclone-knowledge-centre/tropical-cyclone-categories">https://www.bom.gov.au/resources/learn-and-explore/tropical-cyclone-knowledge-centre/tropical-cyclone-categories</a>
+            However, now that the cyclone has gone through town, I can reflect back on this.<br/>
+            <br/>
+            Having missed out on Cyclone Seroja back in 2021 as I was on a camp in Perth, this was actually the first time that I would consciously be there to experience a cyclone pass through town; and I have to say it...<br/>
+            <br/>
+            Cyclone Narelle was pathetic.
+        </p>
+    </TextImageSection>
+    <TextImageSection imageAlt="A photo of a backyard with fallen flora all over the ground" imageSide="left" imageSrc={exmouth}>
+        <p>
+            I mean, sure, places like Exmouth definitely suffered a lot more than we did. Even places like Port Hedland, where it was supposed to end, had it a lot worse than we did.<br/>
+            <br/>
+            Geraldton was well and truly lucky to avoid the worst of Cyclone Narelle.<br/>
+            <br/>
+            Even with Cyclone Seroja back in 2021, Geraldton had it a lot better than places like Kalbarri, which was practically devastated by Seroja, forcing the town to actually become temporarily closed off. Northampton had the roof of its historic railway tavern lose its roof. From what I heard, Geraldton only really had wind, rain, and no power.<br/>
+            <br/>
+            But, Seroja did have an effect on the people of Geraldton through their mentality in making rational decisions in the event of an emergency.
+        </p>
+    </TextImageSection>
+    <TextImageSection imageAlt="A photo of shelves of bread generated by artificial intelligence. The text at the top says 'Fresh Bread Instore Now!' with a tagline that says '*two loaf limit applies'" imageSide="right" imageSrc={rigters}>
+        <p>
+            We already have a fuel crisis as it is with the war in the Middle East and Iran's closure of the Strait of Hormuz, which led to people (not just Geraldtonians) stockpiling more fuel than they need.<br/>
+            <br/>
+            The threat of Cyclone Narelle saw the potential risk of a power outage (and a debunked rumour that Western Power will be switching the power off at 8pm on Friday night), so this resulted in many people (including my own family) buying diesel generators incase of an outage. After all, Seroja forced Geraldton into the dark for about a week. This further contributed to the stockpiling of diesel, which is already at an all-time high.<br/>
+            <br/>
+            Then came the doomsday preparations, where bread was running dry in all stores (not just Rigters, where the image here has been supplied from). Even so, Rigters had to impose a one-loaf limit on the Friday. I've also heard a story that some young boy working in one of the stores was taking a pallet of water out to the shelves, but desperate customers were poaching them whilst he was still moving it.
         </p>
     </TextImageSection>
     <Section contentAlign="left">
-        <h2>
-            Resources Available
-        </h2>
-        <Button href="https://www.dfes.wa.gov.au/hazard-information/cyclone/prepare" target="_blank"><b>DFES:</b> Information on how to prepare your home and property</Button>
-        <p></p>
-        <Button href="https://www.emergency.wa.gov.au" target="_blank"><b>Emergency WA:</b> Stay up to date with the latest warnings</Button>
-        <p></p>
-        <Button href="https://apps.apple.com/au/app/emergency-wa/id6738075801" target="_blank"><b>Emergency WA:</b> Download the app from the App Store</Button>
-        <p></p>
-        <Button href="https://play.google.com/store/apps/details?id=au.gov.wa.dfes.emergencywa&hl=en-US&pli=1" target="_blank"><b>Emergency WA:</b> Download the app from Google Play</Button>
-        <p></p>
-        <Button href="https://bom.gov.au/cyclone" target="_blank"><b>Bureau of Meteorology:</b> Current BOM Watch and Warnings</Button>
-        <p></p>
-        <Button href="https://www.facebook.com/cityofgreatergeraldton" target="_blank">The City of Greater Geraldton will provide updates wherever possible across social media (i.e. Facebook)</Button>
         <p>
+            But what I found funny was when I went into town on the Thursday before the cyclone (which was objectively worse than when the actual cyclone hit us).<br/>
             <br/>
-            <b><u>ABC Midwest and Wheatbelt</u></b> is the official emergency broadcaster for the City of Greater Geraldton. Tune in at <b><u>828 AM</u></b>. It is also available through the Emergency WA app if you do not have a radio but have access to mobile data.
+            My bank doesn't have a branch in town, so I had to go to the Post Office to get cash out of my account. I would've thought that the queue would've been massive with people doing the same (especially Bankwest customers since their bank branch closed last year), but it wasn't. I even drove past the other banks and they weren't packed at all.<br/>
+            <br/>
+            Then, I went to Retravision so I could purchase a tablet for work. I would've thought that people were stocking up on power banks, but they weren't doing that as well.<br/>
+            <br/>
+            What they were doing, instead, was queuing around McDonald's, which I find the idea of panic buying their nuggets fucking hilarious.
+        </p>
+    </Section>
+    <TextImageSection imageAlt="A photo of a Facebook post." imageSide="left" imageSrc={guardian}>
+        <p>
+            Now, at about 8:10pm last night, my phone went off. Emergency WA just broadcasted that Geraldton was now under an Emergency alert, practically forcing us into lockdown to brace ourselves for the storm ahead of us.<br/>
+            <br/>
+            So we waited...<br/>
+            <br/>
+            ...and we waited...<br/>
+            <br/>
+            ...and we waited...<br/>
+            <br/>
+            ...<br/>
+            <br/>
+            ..."where the fuck is the storm??"<br/>
+            <br/>
+            That's right. Geraldton was shielded by its own metaphorical bubble again. As it was said by BOM and DFES, Cyclone Narelle was expected to be as strong as a Category 2, yet last night it felt like it was just a normal winter night.<br/>
+            <br/>
+            As reported by the Geraldton Guardian first thing in the morning, we had at most 56km/h winds and 1.6mm of rain, when a Cat. 2 cyclone is expected to reach over 100kph winds.<br/>
+            <br/>
+            So now, I'm waking up to multiple Facebook posts of people waking up to Narelle not doing what we expected it to do, and now many people are realising: "oh fuck, I just wasted all my money for nothing".<br/>
+            <br/>
+            You should've seen the avalanche of people wanting a refund on their generators through Facebook this morning.
+        </p>
+    </TextImageSection>
+    <Section contentAlign="left">
+        <p>
+            People stockpiled bread, people stockpiled canned foods, alcohol and the lot of it. Now, they're $1000 lighter because of the generator they bought for the looming power outage at 8pm on Friday. The excuse for that rumour was that it was "to prevent fires", but that's just nonsensical if you actually think about the situation you're in. If the power was shut, places like the hospital would have to run off of their backups overnight. Plus: Cyclone = Rain, Rain = Water, Water + Fire = No Fire.<br/>
+            <br/>
+            Sigh... Now, let's just focus on the recovery ahead of us. Be glad you didn't cop it as bad as some people did, and spare a thought for those affected.
         </p>
     </Section>
 </Base>
