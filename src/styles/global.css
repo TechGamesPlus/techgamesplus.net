@@ -54,6 +54,7 @@ h2 {
     font-family: "Inter Tight", sans-serif;
 }
 h3 {
+    font-size: 2rem;
     text-decoration: underline;
 }
 p, ul {
