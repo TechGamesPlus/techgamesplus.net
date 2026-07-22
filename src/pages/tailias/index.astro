@@ -1,0 +1,53 @@
+---
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import TextImageSection from "@components/TextImageSection.astro";
+import Section from "@components/Section.astro"
+import NavCard from "@components/NavCard.astro";
+import Button from "@components/Button.astro"
+
+import kickoffPhoto from "@images/kickoff-20260728.png"
+import referenceSheet from "@images/tailias/Sockune - Reference (Artist\'s BG).png"
+import lastCon from "@images/tailias/LastConAttended.jpg"
+---
+
+<Base title="Tailias (Fursona)" description="A post about my change from TGP to Tailias">
+    <Kickoff contentAlign="left" backgroundImage={kickoffPhoto} backgroundAlt="">
+        <h1>Tailias</h1>
+        <p>
+            This page is dedicated to the showcasing of my fursona, Tailias :3
+        </p>
+        <Button href="https://immich.equinoxx.dev/s/tailias-album" target="_blank">View Full Album Here</Button>
+    </Kickoff>
+    <TextImageSection imageSide="right" imageSrc={referenceSheet} imageAlt="A reference sheet of Tailias">
+        <p>
+            Tailias is a bear-fox hybrid derived from my Terror Teddy. He was concepted towards the closure of FurDU 2026 and fabricated between the convention's closure on April 19th, 2026, and July 28th, 2026.<br/>
+            <br/>
+            In all physical features besides his tail, Tailias is a bear. His tail is that of a fox's tail, and his personality is connotated to a fox as well. Whilst being quiet and introverted at times, he can be mischievous (and a bit of a cunt at times, too).<br/>
+            <br/>
+            A full list of artwork can be found at the link at the top of the page.<br/>
+            <br/>
+            Credit goes to <a href="https://twitter.com/Sockune" target="_blank">Michaela (@Sockune)</a> for the reference sheet, and to <a href="https://sioteru.com/" target="_blank">Sioteru</a> for the bust shot that I use as my PFP.<br/>
+            <br/>
+            Tailias was launched on July 28th, 2026, in favour of replacing my former online identity, TechGamesPlus, <a href="/tailias/tgp-to-tailias">which you can read about here</a>
+        </p>
+    </TextImageSection>
+    <NavCard imageSide="left" imageSrc={lastCon} imageAlt="A photo of a group of furries on the beach">
+        <h3>
+            Convention Attendance
+        </h3>
+        <p>
+            Since my first furcon in 2026, I have attended <b>1</b> furry convention.<br/>
+            <br/>
+            Last Convention Attended: <a href="https://furdu.com.au/events/furdu-2026/" target="_blank">FurDU 2026</a>
+        </p>
+        <!-- <Button href="tailias/conventions">
+            View List Here
+        </Button> -->
+    </NavCard>
+</Base>
+<style>
+    h3 {
+        text-decoration: underline;
+    }
+</style>
