@@ -7,8 +7,9 @@ interface Props {
     backgroundAlt: string;
     contentAlign: "left" | "center" | "right";
     mobileBackgroundOffset?: number | string;
+    hideScrollButton?: boolean;
 }
-const { backgroundImage, backgroundAlt, contentAlign, mobileBackgroundOffset } = Astro.props as Props;
+const { backgroundImage, backgroundAlt, contentAlign, mobileBackgroundOffset, hideScrollButton} = Astro.props as Props;
 let mobileBackgroundOffsetValue = mobileBackgroundOffset ?? "center";
 if (typeof mobileBackgroundOffsetValue === "number") {
     mobileBackgroundOffsetValue = `${mobileBackgroundOffsetValue}px`;
@@ -29,6 +30,8 @@ switch(contentAlign) {
         alignItems = "flex-end";
         break;
 }
+
+const hideScrollButtonStyle = hideScrollButton ? "none" : "block";
 ---
 
 <section class="kickoff" style={`background-image: url(${backgroundImage.src});`}>
@@ -36,7 +39,7 @@ switch(contentAlign) {
         <slot />
     </div>
     <div class="background-filter" />
-    <a onclick=`document.getElementById("main-content").scrollIntoView({ behavior: "smooth" });`>
+    <a onclick=`document.getElementById("main-content").scrollIntoView({ behavior: "smooth" });` style=`display: ${hideScrollButtonStyle};`>
         <Icon class="scroll" name="material-symbols:arrow-circle-down" width={30} height={30} />
     </a>
 </section>
