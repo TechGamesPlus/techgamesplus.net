@@ -1,2 +1,2 @@
-# techgamesplus.net
-An minimal site designed by [@equinoxx](https://equinoxx.dev) for [TechGamesPlus](https://techgamesplus.net). The site is built using Astro, a modern static site generator, and is designed to be fast, responsive, and easy to maintain.
+# tailias.net
+An minimal site designed by [@equinoxx](https://equinoxx.dev) for [Tailias](https://tailias.net). The site is built using Astro, a modern static site generator, and is designed to be fast, responsive, and easy to maintain.
