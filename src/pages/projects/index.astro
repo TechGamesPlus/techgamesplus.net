@@ -7,6 +7,7 @@ import Button from "@components/Button.astro";
 
 import kickoffImage from "@images/projects/kickoff.jpg"
 import Website from "@images/projects/Website.jpg"
+import Poster from "@images/projects/posters.png"
 import ta5aHome from "@images/projects/TA5A_Home.png"
 import airCS_image from "@images/AirCS.png"
 ---
@@ -31,6 +32,17 @@ import airCS_image from "@images/AirCS.png"
 	</NavCard>
 	<NavCard
 		imageSide="left"
+		imageSrc={Poster}
+		imageAlt="A photo of a computer screen featuring a poster being graphically designed"
+	>
+		<h2>Posters</h2>
+		<p>
+			I occasionally do graphic design, so this page showcases my portfolio of posters. <!--I may expand this later to more than just posters-->
+		</p>
+		<Button href="/projects/posters" target="_blank">View Here</Button>
+	</NavCard>
+	<NavCard
+		imageSide="right"
 		imageSrc={ta5aHome}
 		imageAlt="A hand drawn building."
 	>
@@ -41,7 +53,7 @@ import airCS_image from "@images/AirCS.png"
 		<Button href="/projects/the-awakening-5th-anniversary">View Here</Button>
 	</NavCard>
 	<NavCard
-		imageSide="right"
+		imageSide="left"
 		imageSrc={airCS_image}
 		imageAlt="Train station made in Minecraft."
 	>
