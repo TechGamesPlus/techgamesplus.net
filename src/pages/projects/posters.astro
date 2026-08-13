@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import Base from "@layouts/Base.astro";
+import Kickoff from "@components/Kickoff.astro";
+import NavCard from "@components/NavCard.astro";
+import Button from "@components/Button.astro";
+
+import kickoffImage from "@images/projects/posters/kickoff.jpg"
+import madeWithoutAI from "@images/projects/posters/madeWithoutAI.png"
+import carols2024 from "@images/projects/posters/carols2024.jpg"
+---
+
+<Base title="Posters" description="Gallery page for my human-made poster designs">
+	<Kickoff contentAlign="left" backgroundImage={kickoffImage} backgroundAlt="A photo of a computer screen featuring a bunch of code">
+		<h2 style="text-decoration: underline">Posters</h2>
+		<p>
+			This page contains a gallery of posters that I have made.<br/>
+			Of course, fuck AI. All posters are 100% human-made with portfolios to back them up.
+		</p>
+	</Kickoff>
+	<NavCard
+		imageSide="right"
+		imageSrc={madeWithoutAI}
+		imageAlt="A photo of a computer screen featuring a bunch of code"
+	>
+		<h2>Made Without AI</h2>
+		<p>
+			I made this poster in retaliation to our city's carnival poster being AI Slop
+		</p>
+		<Button href="https://drive.google.com/file/d/1sJnTbEFRO5B6ApVvtbBNLg5F4ZSwkiTy/view?usp=sharing" target="_blank">View Here</Button>
+	</NavCard>
+	<NavCard
+		imageSide="left"
+		imageSrc={carols2024}
+		imageAlt="A hand drawn building."
+	>
+		<h2>Carols by Candlelight 2024</h2>
+		<p>
+			I made this poster as part of my Graphic Design class in 2024, both as an assessment and a competition piece. My poster was selected as the winner for 2024 and was "used" across town to promote the event.<br/>
+			<br/>
+			Only problem I had was that they modified the poster in the end (since it was their property upon submission).
+		</p>
+	</NavCard>
+</Base>
